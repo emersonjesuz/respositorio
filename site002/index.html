@@ -15,18 +15,20 @@
         3 vai aparecer fotos com difeentes ninchos e cada um deles leva a um expaço com todas as fotos da aquele nicho
     
         4 rodapé com as redes sociais e telefone pra contato email -->
-    <header>
+    <header id="header">
         <h1>Polyana</h1>
         <p>Designer e Fotografia</p>
     </header>
-    <nav>
-        <a href="#">Home</a>
+    <nav  id="nav">
+        <a href="#">Home</a> 
+        <samp>|</samp>
         <a href="#">Sobre</a>
+        <samp>|</samp>
         <a href="#">Redes</a>
         
     </nav>
 
-    <main>
+    <main class="fundo-txt">
 
         
         <section class="frase">
@@ -53,38 +55,60 @@
         <script src="script.js"></script>
         
     </div>
-  
-    <main>
-        <h1>
-            PAISAGENS
-        </h1>
-    </main>
-    <main class="painel">
-        <section class="albool01">
-           <a target="_blank" href="imagens/IMG-20220603-WA0001.jpg"><img src="imagens/IMG-20220603-WA0001.jpg" alt=""></a>
-           <a target="_blank" href="imagens/IMG-20220603-WA0002.jpg"><img src="imagens/IMG-20220603-WA0002.jpg" alt=""></a>
-            
-            <a target="_blank" href="imagens/IMG-20220603-WA0003.jpg"><img src="imagens/IMG-20220603-WA0003.jpg" alt=""></a>
-            
-            <a target="_blank" href="imagens/IMG-20220603-WA0004.jpg"><img src="imagens/IMG-20220603-WA0004.jpg" alt=""></a>
-            <a target="_blank" href="imagens/IMG-20220603-WA0005.jpg"><img src="imagens/IMG-20220603-WA0005.jpg" alt=""></a>
-            <a target="_blank" href="imagens/IMG-20220603-WA0006.jpg"><img src="imagens/IMG-20220603-WA0006.jpg" alt=""></a>
-        
-            <a target="_blank" href="imagens/IMG-20220603-WA0007.jpg"><img src="imagens/IMG-20220603-WA0007.jpg" alt=""></a>
-            <a target="_blank" href="imagens/IMG-20220603-WA0008.jpg"><img src="imagens/IMG-20220603-WA0008.jpg" alt=""></a>
-            <a target="_blank" href="imagens/IMG-20220603-WA0009.jpg"><img src="imagens/IMG-20220603-WA0009.jpg" alt=""></a>
-            <a target="_blank" href="imagens/IMG-20220603-WA0010.jpg"><img src="imagens/IMG-20220603-WA0010.jpg" alt=""></a>
-            <a target="_blank" href="imagens/IMG-20220603-WA0011.jpg"><img src="imagens/IMG-20220603-WA0011.jpg" alt=""></a>
-       
-        </section>
-    </main>
-    <div class="t-caixa">
-        <a href="https://www.instagram.com/polli_ana_st/?hl=pt-br" target="_blank">
-            <p class="t">click para melhor experiencia</p>
-        </a>
+  <div id="cor-body">
+      
+        <div id="caixa">
+            <main>
+                <h1>
+                    PAISAGENS
+                </h1>
+            </main>
+            <section class="conteiner">
+                <div onclick="img1()">
+                    <img src="albool/chicara.jpg" alt="">
+                </div>
+                <div onclick="img2()">
+                    <img src="albool/abelha.jpg" >
+                </div>
+                <div onclick="img3()">
+                    <img src="albool/coqueiro.jpg" alt="">
+                </div>
+                <div onclick="img4()">
+                    <img src="albool/flor-verm.jpg" alt="">
+                </div>
+                <div onclick="img5()">
+                    <img src="albool/gato.jpg" alt="">
+                </div>
+                <div onclick="img6()">
+                    <img src="albool/girasol.jpg" alt="">
+                </div>
+                <div onclick="img7()">
+                    <img src="albool/madacaru.jpg" alt="">
+                </div>
+                <div onclick="img8()">
+                    <img  src="albool/mulher-preto.jpg" alt="">
+                </div>
+                <div onclick="img9()">
+                    <img src="albool/placa-pare.jpg" alt="">
+                </div>
+                <div onclick="img10()">
+                    <img src="albool/poça-dagua.jpg" alt="">
+                </div>
+            </section>
+            <div id="res">
+                <img id="foto" src="imagens/IMG-20220603-WA0001.jpg" alt="">
+            </div>
+            <div class="t-caixa">
+                <a href="https://www.instagram.com/polli_ana_st/?hl=pt-br" target="_blank">
+                    <p class="t">click aqui para melhor experiencia</p>
+                </a>
+            </div>
+        </div>
     </div>
+        
     <footer>
-        <p>criado por emersonjesuz</p>
+        <p>&copy; emersonjesuz</p>
     </footer>
+    <script src="script1.js"></script>
 </body>
 </html>
