@@ -5,12 +5,14 @@ var body = document.getElementById('cor-body')
 var header = document.getElementById('header')
 var nav = document.getElementById('nav')
 
+
 function img1(){
     
     img.src ='imagens/IMG-20220603-WA0003.jpg'
     body.style.background = '#251410df'
     header.style.background ='#251410df'
     nav.style.background ='#251410df'
+    header.style.color='#f0f8ffa4'
 }
 
 function img2(){
@@ -18,7 +20,7 @@ function img2(){
     body.style.background ='#935880'
     header.style.background ='#935880'
     nav.style.background ='#935880'
-    
+    header.style.color='#000000'
 }
 
 function img3(){
@@ -26,13 +28,15 @@ function img3(){
     body.style.background ='#656d81'
     header.style.background ='#656d81'
     nav.style.background ='#656d81'
+    header.style.color='#000000'
 }
 
 function img4(){
     img.src ='imagens/IMG-20220603-WA0001.jpg'
     body.style.background ='#952130'
     header.style.background ='#952130'
-    nav.style.background ='#952130' 
+    nav.style.background ='#952130'
+    header.style.color='#000000' 
 }
 
 function img5(){
@@ -40,6 +44,7 @@ function img5(){
     body.style.background ='#225826'
     header.style.background ='#225826'
     nav.style.background ='#225826'
+    header.style.color='#000000'
 }
 
 function img6(){
@@ -47,6 +52,7 @@ function img6(){
     body.style.background ='#8f9a47'
     header.style.background ='#8f9a47'
     nav.style.background ='#8f9a47'
+    header.style.color='#000000'
 }
 
 function img7(){
@@ -54,6 +60,7 @@ function img7(){
     body.style.background ='#384d7a'
     header.style.background ='#384d7a'
     nav.style.background ='#384d7a'
+    header.style.color='#000000'
 }
 
 
@@ -63,6 +70,7 @@ function img8(){
     body.style.background ='#b4b5b7 '
     header.style.background ='#b4b5b7'
     nav.style.background ='#b4b5b7'
+    header.style.color='#000000'
 }
 
 
@@ -71,6 +79,7 @@ function img9(){
     body.style.background ='#86665b '
     header.style.background ='#86665b'
     nav.style.background ='#86665b'
+    header.style.color='#000000'
 }
 
 function img10(){
@@ -78,4 +87,5 @@ function img10(){
     body.style.background ='#abb1ed '
     header.style.background ='#abb1ed'
     nav.style.background ='#abb1ed'
+    header.style.color='#000000'
 }

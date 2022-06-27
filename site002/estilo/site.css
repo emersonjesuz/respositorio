@@ -10,7 +10,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(17, 19, 20, 0.977);
+    background-color: #000000;
     width: 100%;
     
 }
@@ -28,6 +28,7 @@ header > h1{
     font-size: 5em;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.56);
 }
+
 header > p{
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.56);
 }
@@ -136,6 +137,9 @@ img{
 /**/
 #caixa{
     position: relative;
+    display: block;
+    margin: auto;
+    width: 100%;
 }
 .conteiner > div > img {
     width: 100%;
@@ -144,26 +148,40 @@ img{
     
 }
 .conteiner{
-    display: flexbox;
-    align-content: center;
-    width: 60px;
+    display: block;
+    align-content: flex-end;
+    align-items: flex-end;
+    width: 80px;
+    height: 300px;
     margin: auto;
-    padding: 5px;
-    background: black;
-    position: absolute;
+    padding: 0px;
     
-    border-radius: 10px;
+    
+    
+    border-radius: 5px;
      
 
-    
+    transform: translate(80%, 35%);
     
 }
 .conteiner > div{
-    
+    background-color:black ;
+    padding: 5px;
+}
+.fila1{
     margin: 5px ;
-    width: 50px;
-    height: 47.5px;
-    background-color: rgb(12, 10, 12);
+    width: 80px;
+    
+    transform: translate(-5%,-92%);
+    
+}
+
+.fila2{
+    margin: 5px ;
+    width: 80px;
+    
+    transform: translate(100%,-592%);
+    
 }
 /* albool de foto*/
 .t{
@@ -186,17 +204,20 @@ a{
 }
 #res{
     background-color: rgb(5, 5, 5);
-    
-    width: 500px;
-    margin: auto;
+    margin:auto;
+    width: 400px;
     padding: 20px;
-    height: 500px;
-
+    height: 400px;
+    
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.488);
+
+
+
+    transform: translate(30%,-50%);
 }#foto{
     width: 100%;
     height: 100%;
-    display: block;
+    
     margin: auto;
     
 }
@@ -227,6 +248,10 @@ footer > p{
 @media (max-width:1500px){
     .conteiner{
         margin-left: 20%;
+
+    }
+    .conteiner > div{
+        
     }
 }
 @media (max-width:1200px){
@@ -244,18 +269,35 @@ footer > p{
         margin-left: 5%;
     }
 }
-@media (max-width:780px){
+@media (max-width:800px){
     *{margin: 0px;}
     nav{
         text-align: center;
     }
    #res {
         border-radius: 10px;
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
+
+        transform: translate(39%, -60%);
     }
     .conteiner{
         margin-left: 9%;
+    }
+    .fila1{
+        margin: 5px ;
+        width: 60px;
+        
+        transform: translate(-5%,-82%);
+        
+    }
+    
+    .fila2{
+        margin: 5px ;
+        width: 60px;
+        
+        transform: translate(100%,-552%);
+        
     }
     .t{
         width: 300px;
@@ -263,6 +305,7 @@ footer > p{
     }  
     #cor-body{
         margin-bottom: 0px;
+        height: 50%;
     }
 }
 @media (max-width:750px){
@@ -278,8 +321,20 @@ footer > p{
     .conteiner{
         margin-left: 8%;
     }
-    .conteiner > div{
-        height: 30px;
+    .fila1{
+        margin: 5px ;
+        width: 60px;
+        
+        transform: translate(-5%,-82%);
+        
+    }
+    
+    .fila2{
+        margin: 5px ;
+        width: 60px;
+        
+        transform: translate(100%,-552%);
+        
     }
     .t{
         width: 300px;
@@ -296,19 +351,36 @@ footer > p{
     }
    #res {
         border-radius: 10px;
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
     .conteiner{
         margin-left: 9%;
     }
+    .fila1{
+        margin: 5px ;
+        width: 50px;
+        
+        transform: translate(-5%,-82%);
+        
+    }
+    
+    .fila2{
+        margin: 5px ;
+        width: 50px;
+        
+        transform: translate(100%,-552%);
+        
+    }
     .t{
-        width: 300px;
+        width: 250px;
         font-size: 15px;
+
+        transform: translate(35%, -240%);
     }
     #cor-body{
         margin-bottom: 0px;
-        height: 80vh;
+        height: 100vh;
     }
 }
 @media (max-width:600px){
@@ -318,11 +390,26 @@ footer > p{
     }
    #res {
         border-radius: 10px;
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
     .conteiner{
         margin-left: 3%;
+    }
+    .fila1{
+        margin: 5px ;
+        width: 60px;
+        
+        transform: translate(-5%,-82%);
+        
+    }
+    
+    .fila2{
+        margin: 5px ;
+        width: 60px;
+        
+        transform: translate(100%,-552%);
+        
     }
     .t{
         width: 300px;
@@ -330,7 +417,7 @@ footer > p{
     }
     #cor-body{
         margin-bottom: 0px;
-        height: 70vh;
+        height: 100vh;
     }
 }
 @media (max-width:520px){
@@ -340,25 +427,39 @@ footer > p{
     }
    #res {
         border-radius: 10px;
-        width: 300px;
+        width: 200px;
         height: 300px;
-        margin-left: 23%;
+        
     }
     .conteiner{
         margin-left: 2%;
 
     }
-    .conteiner > div{
-        height: 30px;
+    .fila1{
+        
+        width: 50px;
+        
+        transform: translate(-20%,-82%);
+        
+    }
+    
+    .fila2{
+        
+        width: 50px;
+        
+        transform: translate(90%,-552%);
+        
     }
     .t{
-        width: 300px;
+        width: 250px;
         font-size: 15px;
-        margin-top: 60px;
+        
+        transform: translate(30%,-300%);
     }
     #cor-body{
         margin-bottom: 0px;
-        height: 80vh;
+        height: 110vh;
+        width: 96vw;
     }
 }
 @media (max-width:450px){
@@ -379,23 +480,39 @@ footer > p{
    #res {
         border-radius: 10px;
         width: 200px;
-        height: 200px;
-        margin-left: 23%;
+        height: 300px;
+
+        transform: translate(30%,-70%);
     }
     .conteiner{
         margin-left: 2%;
 
     }
-    .conteiner > div{
-        height: 20px;
+    .fila1{
+        margin: 5px ;
+        width: 40px;
+        
+        transform: translate(-80%,-82%);
+        
+    }
+    
+    .fila2{
+        margin: 5px ;
+        width: 40px;
+        
+        transform: translate(40%,-552%);
+        
     }
     .t{
-        width: 300px;
+        width: 250px;
         font-size: 15px;
-        margin-top: 60px;
+       
+
+        transform: translate(10%,-490%);
     }
     #cor-body{
         margin-bottom: 0px;
-        height: 50vh;
+        height: 70vh;
+        width: 100vw;
     }
 }
