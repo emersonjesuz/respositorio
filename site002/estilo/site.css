@@ -76,7 +76,7 @@ section.frase > p{
 
     margin: auto;
     padding: 20px;
-    width: 50%;
+    width: 70%;
 
     font-size: 0.8em;
     
@@ -186,11 +186,15 @@ img{
 /* albool de foto*/
 .t{
     text-align: center;
-    margin: 20px auto;
+    margin: 0px auto;
     width: 350px;
     background-color: black;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 19px;
+
+    display: run-in;
+
+    transform: translate(30%,-500%);
 }
 .t > a , p{
     text-align: center;
@@ -201,13 +205,14 @@ img{
 }
 a{
     text-decoration: none;
+    
 }
 #res{
     background-color: rgb(5, 5, 5);
     margin:auto;
     width: 400px;
     padding: 20px;
-    height: 400px;
+    height: 500px;
     
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.488);
 
@@ -277,7 +282,7 @@ footer > p{
    #res {
         border-radius: 10px;
         width: 300px;
-        height: 300px;
+        height: 400px;
 
         transform: translate(39%, -60%);
     }
@@ -316,7 +321,7 @@ footer > p{
    #res {
         border-radius: 10px;
         width: 300px;
-        height: 300px;
+        height: 400px;
     }
     .conteiner{
         margin-left: 8%;
@@ -352,7 +357,7 @@ footer > p{
    #res {
         border-radius: 10px;
         width: 200px;
-        height: 200px;
+        height: 300px;
     }
     .conteiner{
         margin-left: 9%;
@@ -391,7 +396,7 @@ footer > p{
    #res {
         border-radius: 10px;
         width: 200px;
-        height: 200px;
+        height: 300px;
     }
     .conteiner{
         margin-left: 3%;
@@ -462,7 +467,7 @@ footer > p{
         width: 96vw;
     }
 }
-@media (max-width:450px){
+@media (max-width:459px){
     
     header{
         font-size: 15px;
@@ -512,7 +517,7 @@ footer > p{
     }
     #cor-body{
         margin-bottom: 0px;
-        height: 70vh;
+        height: 150vh;
         width: 100vw;
     }
 }
